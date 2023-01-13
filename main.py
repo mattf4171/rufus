@@ -87,7 +87,7 @@ if __name__ == "__main__":
 	#
 	# C:\Users\matth\OneDrive\Desktop\Education\rufus_prontoAI
 	#
-	
-	value = input("Directory in which to assess git status: ")
+	print(os.getcwd())
+	value = input("Input directory in which to assess git status: ")
 	new_rufus = Rufus(value)
 	new_rufus.git_repo_specs()
