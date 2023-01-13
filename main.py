@@ -44,10 +44,10 @@ class Rufus:
 		# whether repository files have been modified (boolean)
 		# check if 'nothing to commit..' is found in the output of git status 
 		check_modified = 'nothing to commit, working tree clean'
-		modified = False 
+		modified = True 
 		for line in git_status:
 			if check_modified in line:
-				modified = True
+				modified = False
 
 		print("local changes: {}".format(modified))
 		
